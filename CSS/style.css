@@ -1,0 +1,159 @@
+*{ margin: 0; padding: 0; font-family: 'Oswald', sans-serif;
+}
+
+/*Some css for header part..here linear gradient useful to gib=ve gradient by 2 colors*/
+header{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to left, #fff 80%, #FC766AFF 20%);	
+}
+
+.navsection{
+	width: 100%; height: 20vh; background-color: yellow;
+	display: flex; justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to top, #fff 80%, #FC766AFF 20%);
+}
+
+.logo{
+	width: 40%;
+	color: #fff;
+	background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+	padding-left: 100px;
+	box-sizing: border-box;
+	/*Box sizinng is used to give border only on content*/
+}
+
+.logo h1{
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	animation: anything 5s linear infinite; 
+	/*Given an animation to my logo name*/
+	animation-direction: alternate;
+}
+
+@keyframes anything{
+	from{ padding-left: 40px; }
+	to{ padding-right: 40px; }
+}
+
+nav{
+	width: 60%;
+	/*background-color: yellow;*/
+	display: flex;
+	justify-content: space-around;
+
+}
+
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 900;
+	font-size: 17px;
+	position: relative;
+
+
+}
+
+/*First child meaning that after nav tag the elements come the css will apply on that*/
+nav a:first-child{
+	color: #4458dc;
+}
+
+nav a:before{
+	content: "";
+	position: absolute;
+	top: 110%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	border-bottom: 2px solid #4458dc;
+	transition: all 0.4s linear;
+}
+
+nav a:hover:before{
+	width: 100%;
+}
+
+main{
+	height: 80vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+
+
+
+.right img{
+	max-width: 300px;
+	height: auto;
+}
+
+.left{
+	color: #000; 
+	text-transform: uppercase;
+}
+
+.left h3{
+	font-size: 40px;
+	margin-bottom: 20px;
+	position: relative;
+
+}
+
+/*Now following is called advance psuedo elements*/
+.left h3:after{
+	content: "";
+	width: 70px;
+	height: 3px;
+	position: absolute;
+	top: 43%;
+	left: 15%;
+	background-color: black;
+}
+
+.left h1{
+	margin-top: 20px;
+	font-size: 70px;
+	margin-bottom: 25px;
+	
+
+}
+
+.left h2{
+	margin-bottom: 35px;
+	font-weight: 500;
+	word-spacing: 5px;
+
+}
+
+.left .btn1{
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 14px;
+	text-align: center;
+	padding: 12px 25px;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 50px;
+	color: #5B84B1FF;
+	/*letter-spacing: 0;*/
+	border: double 2px;
+	box-shadow: none;
+
+}
+.left .btn1:hover{
+	border: 1px solid #4458dc;
+	color: #222;
+	background-color: #5B84B1FF;
+	box-shadow: none;
+	background-image: none;
+
+
+}
+
