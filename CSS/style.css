@@ -27,7 +27,7 @@ header{
 .logo h1{
 	text-transform: uppercase;
 	font-size: 1.6rem;
-	animation: anything 5s linear infinite; 
+	animation: anything 3s linear infinite; 
 	/*Given an animation to my logo name*/
 	animation-direction: alternate;
 }
